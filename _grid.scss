@@ -1,0 +1,112 @@
+$grid-columns:12;
+$grid-gaps:(
+    "0":0,
+    "1": 10px,
+    "2": 20px,
+    "3": 30px,
+);
+// base layout direction container classes
+$direction-values: row, column, column-reverse, row-reverse;
+// base layout direction container classes
+$align-values: center, flex-start, flex-end,;
+// base layout container classes
+$justify-values: flex-start, flex-end, center, space-between, space-around,;
+// flex-wrap classes
+$wrap-values: wrap, no-wrap, wrap-reverse,;
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 20px;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+// grid gap
+@each $key, $val in $grid-gaps{
+    .gap-#{$key} > *{
+        padding: $val;
+    }
+    .gap-#{$key}{
+        margin-left: -$val;
+        margin-right: -$val;
+    }
+}
+
+// flex wrap -classes
+@each $val in $direction-values {
+    .flex-direction-#{$val} {
+        flex-direction: $val;
+    }
+}
+// justify content-classes
+@each $val in $justify-values {
+    .justify-content-#{$val} {
+        justify-content: $val;
+    }
+}
+// Align items content-classes
+@each $val in $align-values {
+    .align-items-#{$val} {
+        align-items: $val;
+    }
+}
+// flex wrap -classes
+@each $val in $wrap-values {
+    .flex-#{$val} {
+        justify-content: $val;
+    }
+}
+
+
+// col classes
+@include xs{
+    @for $i from 1 through $grid-columns{
+        .col-#{$i}-xs{
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: ($i * 100% / $grid-columns);
+        }
+    }
+}
+@include sm{
+    @for $i from 1 through $grid-columns{
+        .col-#{$i}-sm{
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: ($i * 100% / $grid-columns);
+        }
+    }
+}
+@include md{
+    @for $i from 1 through $grid-columns{
+        .col-#{$i}-md{
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: ($i * 100% / $grid-columns);
+        }
+    }
+}
+@include lg{
+    @for $i from 1 through $grid-columns{
+        .col-#{$i}-lg{
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: ($i * 100% / $grid-columns);
+        }
+    }
+}
+@include xl{
+    @for $i from 1 through $grid-columns{
+        .col-#{$i}-xl{
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: ($i * 100% / $grid-columns);
+        }
+    }
+}

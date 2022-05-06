@@ -1,0 +1,33 @@
+// import font
+@import url('');
+
+
+// reset style
+*{
+    color:inherit;
+    margin:0;
+}
+
+body{
+    // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul{
+    padding:0;
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    border:0;
+    border-top: 1px dotted #efefef;
+}
+
+img{
+    max-width: 100%;
+}
+

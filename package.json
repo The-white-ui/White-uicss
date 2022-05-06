@@ -1,0 +1,19 @@
+{
+  "name": "white-uicss",
+  "version": "0.1.0",
+  "description": "A CSS Framework for building a responsive and well looking website.",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-white-ui/white-ui.git"
+  },
+  "author": "ibnyahyah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/The-white-ui/white-ui/issues"
+  },
+  "homepage": "https://github.com/The-white-ui/white-ui#readme"
+}
