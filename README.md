@@ -4,7 +4,3 @@ WHITE-UICSS HOPE IN MAKING DESIGNING A WEBSITE BECOME A BLIND OF AN EYE FOR NEWB
 
 # CREATION OF SEVERAL STYLE COMPONENT
 
-
-
-
-[![Rate this package](https://badges.openbase.com/js/rating/white-uicss.svg?)](https://openbase.com/js/white-uicss?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
